@@ -2,11 +2,13 @@ export default {
     template: `
       <div id="app">
         <header>
+          <font color="orange" size="6" face="Comic Sans MS">e-Plånbok</font><br/>
           <nav id="meny-rad">
               <router-link to="/login">Login </router-link>
-              <router-link to="/myPage" v-if="user"><i class="fas fa-user"></i></i></router-link>
+              <router-link to="/choice">Choice </router-link>
+              <router-link to="/myPage" v-if="user"><i class="fas fa-user"></i></i></router-link> -->
               <a @click="doLogout" v-if="user"><i class="fas fa-door-open"></i></a>
-
+          </nav>
         </header>
         <main>
           <router-view />
@@ -24,6 +26,7 @@ export default {
           throw new Error(`Problem handling something: ${err}.`);
         })
       },
+
       computed: {
          user() {
            return this.$store.state.user
@@ -41,7 +44,7 @@ export default {
          try {
            user = await user.json()
            this.$store.commit('setUser', user)
-           console.log('Login user :', user.name);
+           console.log('Login user :', user.username);
          } catch{
            console.log('Client not authenticated');
          }

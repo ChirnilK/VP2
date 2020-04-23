@@ -8,5 +8,3 @@ new Vue({
   router,
   render: h => h(app)
 }).$mount('#app');
-
-///hello

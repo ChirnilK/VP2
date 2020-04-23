@@ -29,6 +29,13 @@ public class MyUserDetailsService implements UserDetailsService {
         return toUserDetails(user);
     }
 
+    // @PostConstruct
+    //     private void createDefaultUsers(){
+    //         if (userRepo.findByUsername("Chiharu") == null) {
+    //             addUser("Chiharu", "admin");
+    //         }
+    //     }
+
     public User addUser(String username, String password){
         User user = new User(username, encoder.encode(password));
         try {

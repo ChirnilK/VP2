@@ -2,9 +2,13 @@
     box-sizing: border-box;
   }
 
+  .login-page {
+    width: 500px;
+    margin: auto;
+  }
+
   .login-header h3{
     font-size: 25px;
-    margin-top: -7px;
   }
 
   .login-header{
@@ -16,10 +20,7 @@
     font-weight: lighter;
   }
 
-  .login-page {
-    width: 400px;
-    margin: auto;
-  }
+  
   .login-page .form .login{
     margin-top: -10px;
     margin-bottom: 10px;

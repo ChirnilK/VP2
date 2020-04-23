@@ -31,7 +31,7 @@ export const router = new VueRouter({
   
     {
       name: "addAction",
-      path: "/addAction",
+      path: "/addaction",
       component: addAction,
     },
   ],
