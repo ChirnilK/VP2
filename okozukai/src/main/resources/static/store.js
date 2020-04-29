@@ -14,15 +14,12 @@ export const store = new Vuex.Store({
       state.users = users;
     },
 
-    // appendBooking(state, book) {
-    //   state.bookings.push(book);
-    // },
+    appendInout(state, inout) {
+      state.inouts.push(inout);
+    },
     
     setUser(state, user) {
       state.user = user;
-    },
-    // setBookings(state, bookings) {
-    //   state.bookings = bookings;
-    // }
+    }
   }
 });

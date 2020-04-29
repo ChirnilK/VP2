@@ -2,12 +2,11 @@ export default {
     template: `
       <div id="app">
         <header>
-          <font color="orange" size="6" face="Comic Sans MS">e-Plånbok</font><br/>
+          <font color="orange" size="24" face="Comic Sans MS">e-Plånbok</font><br/>
           <nav id="meny-rad">
-              <router-link to="/login">Login </router-link>
-              <router-link to="/choice">Choice </router-link>
-              <router-link to="/myPage" v-if="user"><i class="fas fa-user"></i></i></router-link> -->
-              <a @click="doLogout" v-if="user"><i class="fas fa-door-open"></i></a>
+              <router-link to="/login"><i class="fas fa-sign-in-alt"></i></router-link>
+              <router-link to="/myPage"><i class="far fa-user"></i></router-link>
+              <a @click="doLogout"><i class="fas fa-sign-out-alt"></i></a>
           </nav>
         </header>
         <main>

@@ -3,8 +3,9 @@ import VueRouter from "./libs/vue-router.esm.browser.js";
 Vue.use(VueRouter);
 
 import login from "./views/login.js";
-import choice from "./views/choice.js";
-import addAction from "./views/addAction.js";
+import income from "./views/income.js";
+import outcome from "./views/outcome.js";
+import history from "./views/history.js";
 import myPage from "./views/myPage.js";
 
 export const router = new VueRouter({
@@ -13,14 +14,20 @@ export const router = new VueRouter({
   routes: [
     {
       name: "login",
-      path: "/login",
+      path: "/",
       component: login,
     },
 
     {
-      name: "choice",
-      path: "/choice",
-      component: choice,
+      name: "income",
+      path: "/income",
+      component: income,
+    },
+
+    {
+      name: "outcome",
+      path: "/outcome",
+      component: outcome,
     },
   
     {
@@ -30,9 +37,9 @@ export const router = new VueRouter({
     },
   
     {
-      name: "addAction",
-      path: "/addaction",
-      component: addAction,
-    },
-  ],
+      name: "history",
+      path: "/history",
+      component: history
+    }
+  ]
 });

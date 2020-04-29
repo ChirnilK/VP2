@@ -13,12 +13,12 @@ public class InoutController {
     @Autowired
     InoutService inoutService;
 
-    @GetMapping("/rest/inout")
+    @GetMapping("/rest/inouts")
     public List<Inout> getAllInout(){
         return inoutService.findAllInout();
     }
 
-    @GetMapping("/rest/inout/user/{user}")
+    @GetMapping("/rest/inouts/user/{user}")
     public List<Inout> getInoutByUser(@PathVariable int user){
         return inoutService.findByUser(user);
     }

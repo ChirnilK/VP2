@@ -12,6 +12,7 @@ public class Inout {
     private String what;
     private Double cost;
     private int user;
+    private String time;
 
     public Inout() {
     }
@@ -46,5 +47,13 @@ public class Inout {
 
     public void setUser(int user) {
         this.user = user;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }
